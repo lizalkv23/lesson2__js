@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 0</title>
+</head>
+
+<body style="margin: 0;
+box-sizing: border-box; 
+padding: 0;">
+   <div style="background: linear-gradient(45deg, #000 12%, #fff 80%);
+   min-height: 100vh;
+   padding: 0 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000; ">
+      <h1 style="color: #1bb92d;
+      margin: 0; 
+      max-width: 350px;
+       padding: 30px 10px;
+       text-shadow: 1px 1px 1px #000; 
+       "> Задача 0</h1>
+      <p style="font-size: 20px;
+       color: #131111;
+       font-weight: 800;
+       font-style: italic;
+       ">Вычислить значение выражений</p>
+      <img src="img/task0.jpg" alt="task0" style="max-width: 300px;
+       box-shadow: 5px 5px 5px #1bb92d;
+       display:block;">
+      <script>
+         //Вводим необходимые данные
+         let a = parseFloat(prompt('Введите первое число', '0'))
+         let b = parseFloat(prompt('Введите второе число', '0'))
+         let c = parseFloat(prompt('Введите третье число', '0'))
+         //Находим результат
+         const s1 = a + 12 + b
+         const s2 = Math.sqrt((a + b) / (2 * a))
+         const s3 = Math.cbrt((a + b) * c)
+         const s4 = Math.sin(a / (-b))
+         // Выводим результат
+         document.write(` Ваше первое значение: ${a}; Ваше второе значение: ${b}; Ваше третье значение: ${c}; <br> <br>
+         S1 = ${s1.toFixed(2)} <br>
+         S2 = ${s2.toFixed(2)} <br>
+         S3 = ${s3.toFixed(2)} <br>
+         S4 = ${s4.toFixed(2)}`)
+      </script>
+   </div>
+</body>
+
+</html>

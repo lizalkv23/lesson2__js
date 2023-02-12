@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 6</title>
+</head>
+
+<body style="margin: 0;
+box-sizing: border-box; 
+padding: 0;">
+   <div style="background: linear-gradient(45deg, #000 12%, #fff 80%);
+   min-height: 100vh;
+   padding: 0 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000; ">
+      <h1 style="color: #1bb92d;
+      margin: 0; 
+      max-width: 350px;
+       padding: 30px 10px;
+       text-shadow: 1px 1px 1px #000; 
+       "> Задача 6</h1>
+      <p style="font-size: 20px;
+       color: #131111;
+       font-weight: 800;
+       font-style: italic;
+       ">С клавиатуры вводятся стоимость товара и количество единиц 3 товаров. Вычислить стоимость каждого товара
+         отдельно и общую стоимость. Вывести чек (как в супермаркете) используя элементы разметки.</p>
+      <script>
+         //Вводим необходимые данные
+         let priceNun1 = parseFloat(prompt('Сумма товара №1.', '$'));
+         let quantityNum1 = parseFloat(prompt('Количество товара', '1'));
+         let priceNum2 = parseFloat(prompt('Сумма товара №2', '$'));
+         let quantityNum2 = parseFloat(prompt('Количество товара', '1'));
+         let priceNum3 = parseFloat(prompt('Сумма товара №3', '$'));
+         let quantityNum3 = parseFloat(prompt('Количество товара', '1'));
+         //Находим результат
+         let totalSum1 = priceNun1 * quantityNum1
+         let totalSum2 = priceNum2 * quantityNum2
+         let totalSum3 = priceNum3 * quantityNum3
+         let totalAll = totalSum1 + totalSum2 + totalSum3
+
+         // Выводим результат
+         document.write(` 
+         <table border="3" style="border: 3px solid #1bb92d;
+      width: 300px;">
+         <tr>
+            <th>Сумма</th>
+            <th>Количество</th>
+            <th>Всего</th>
+         </tr>
+         <tr>
+            <th>${priceNun1.toFixed(2)}</th>
+            <th>${quantityNum1.toFixed(2)}</th>
+            <th>${totalSum1.toFixed(2)}</th>
+         </tr>
+         <tr>
+            <th>${priceNum2.toFixed(2)}</th>
+            <th>${quantityNum2.toFixed(2)}</th>
+            <th>${totalSum2.toFixed(2)}</th>
+         </tr>
+         <tr>
+            <th>${priceNum3.toFixed(2)}</th>
+            <th>${quantityNum3.toFixed(2)}</th>
+            <th>${totalSum3.toFixed(2)}</th>
+         </tr>
+         <tr>
+            <th></th>
+            <th></th>
+            <th>${totalAll.toFixed(2)}</th>
+         </tr>
+      </table>
+         `)
+      </script>
+   </div>
+</body>
+
+</html>

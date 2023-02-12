@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task 2</title>
+</head>
+
+<body style="margin: 0;
+box-sizing: border-box; 
+padding: 0;">
+   <div style="background: linear-gradient(45deg, #000 12%, #fff 80%);
+   min-height: 100vh;
+   padding: 0 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000; ">
+      <h1 style="color: #1bb92d;
+      margin: 0; 
+      max-width: 350px;
+       padding: 30px 10px;
+       text-shadow: 1px 1px 1px #000; 
+       "> Задача 2</h1>
+      <p style="font-size: 20px;
+       color: #131111;
+       font-weight: 800;
+       font-style: italic;
+       ">Дан год рождения (дата: 1 января) и текущий год. Найти количество лет.</p>
+      <script>
+         //Вводим необходимые данные
+         let userYearBD = parseInt(prompt('Введите свой год рождения', '1921'))
+         //Находим результат
+         let nowDate = new Date()
+         let nowYear = nowDate.getFullYear();
+         nowDate = nowYear - userYearBD
+         // Выводим результат
+         document.write(`Вам сейчас ${nowDate} года/лет`)
+      </script>
+   </div>
+</body>
+
+</html>
